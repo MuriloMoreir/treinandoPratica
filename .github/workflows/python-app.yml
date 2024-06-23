@@ -40,7 +40,7 @@ jobs:
       name: Docker
       with:
         image: murilomoreira971/flask_treino
-        tags: ${{github.run_number}}, ${{steps.ver.outputs.version}}-prod
+        tags: ${{github.run_number}}, ${{steps.ver.outputs.version}}prod
         registry: docker.io
         dockerfile: Dockerfile
         username: ${{secrets.DOCKER_USERNAME}}
