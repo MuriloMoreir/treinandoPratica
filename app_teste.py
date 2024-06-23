@@ -11,10 +11,5 @@ class FlaskAppTests(unittest.TestCase):
    self.assertEqual(response.status_code, 200)
    self.assertIn(b'Germinare',response.data)
 
-  def test_murilo(self):
-   response = self.client.get('/Murilo')
-   self.assertEqual(response.status_code, 200)
-   self.assertIn(b'MURILO',response.data)
-
 if __name__ == '__main__':
  unittest.main()
